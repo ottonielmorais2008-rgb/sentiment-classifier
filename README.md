@@ -2,7 +2,7 @@
 
 A small English positive/negative classifier that runs in the browser. The page is static. After you choose **Load model**, [Transformers.js](https://huggingface.co/docs/transformers.js) downloads a quantized DistilBERT model and runs it on this device with WebAssembly. The text you type is not sent to a server.
 
-**Live site:** [https://ottonielmorais2008-rgb.github.io/sentiment-classifier/](https://ottonielmorais2008-rgb.github.io/sentiment-classifier/) — **pending**. The site is not deployed until this project is on `main` and GitHub Pages is set to deploy from GitHub Actions.
+**Live site:** [https://ottonielmorais2008-rgb.github.io/sentiment-classifier/](https://ottonielmorais2008-rgb.github.io/sentiment-classifier/)
 
 ## Architecture
 
@@ -118,4 +118,4 @@ The workflow in `.github/workflows/ci.yml`:
 - On a push to `main`, or a manual run of the workflow from `main`: build again and deploy `dist` with the official Pages actions. Only that job has `pages: write`, `id-token: write`, and `actions: read`.
 - Actions are pinned to commit SHAs of current releases: `actions/checkout` v7.0.1, `actions/setup-node` v7.0.0, `actions/upload-pages-artifact` v5.0.0, and `actions/deploy-pages` v5.0.1.
 
-Before the first real deployment, a repository admin needs **Settings → Pages → Build and deployment → Source: GitHub Actions**. Until that setting exists and the deploy job has succeeded on `main`, the public URL above stays pending.
+GitHub Pages publishes that build from the Actions workflow. The public site is the link at the top of this page.
