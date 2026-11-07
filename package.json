@@ -1,0 +1,25 @@
+{
+  "name": "sentiment-classifier",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.5.1"
+  },
+  "devDependencies": {
+    "happy-dom": "^20.14.6",
+    "typescript": "5.9",
+    "vite": "^6.4.5",
+    "vitest": "^3.2.7"
+  }
+}
